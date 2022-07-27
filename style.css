@@ -1,0 +1,199 @@
+:root{
+--Soft-red: hsl(7, 99%, 70%);
+--Yellow: hsl(51, 100%, 49%);
+--Dark-desaturated-cyan: hsl(167, 40%, 24%);
+--Dark-blue: hsl(198, 62%, 26%);
+--Dark-moderate-cyan: hsl(168, 34%, 41%);
+
+--Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+--Very-dark-grayish-blue: hsl(213, 9%, 39%);
+--Dark-grayish-blue: hsl(232, 10%, 55%);
+--Grayish-blue: hsl(210, 4%, 67%);
+--White: hsl(0, 0%, 100%);
+
+--main-font: "Fraunces", sans-serif;
+--paragraphs: "Barlow", sans-serif;
+}
+
+/*Style resets*/
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: var(--main-font);
+    box-sizing: border-box;
+}
+
+/*Hero section styling*/
+
+.hero{
+    background-image: url(images/desktop/image-header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero nav{
+    padding: 1.5rem;
+}
+
+.hero nav button{
+    height: 45px;
+    border-radius: 50px;
+    padding: 0 25px;
+}
+
+.hero .nav-item{
+    margin-right: 2rem;
+}
+
+.hero .nav-item:nth-of-type(4){
+    margin-right: 0;
+}
+
+.hero .nav-item .nav-link{
+    color: var(--White) !important;
+    font-family: var(--paragraphs);
+}
+
+.hero-content{
+    display:flex;
+    flex-direction: column;
+}
+
+.hero h1{
+    align-self: center;
+    margin-top: 7.5rem;
+    letter-spacing: 0.85rem;
+    color:var(--White);
+    font-family: var(--main-font);
+}
+
+.hero .hero-content img{
+    align-self: center;
+    margin-top: 7.5rem;
+}
+
+/* Main content section */
+/* First Section - Transform your brand  */
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    max-width: 60%;
+}
+
+.text h2{
+    font-size: 3rem;
+}
+.text p{
+    line-height: 2rem;
+    color: var(--Dark-grayish-blue);
+    margin-top: 1.5rem;
+}
+
+.text a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;
+    padding: 0 0.5rem;
+    position: relative;
+}
+
+.text a:hover{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;
+}
+/*First line under "Learn more" colored yellow + hover effect */
+.transform-text a::before{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0.6rem;
+    background: hsla(51, 100%, 49%, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.5rem;
+    transition: 200ms;
+ }
+ 
+ .transform-text a:hover::before{
+    background: var(--Yellow);
+ }
+
+.image{
+    flex-basis: 50%;
+}
+
+.image img{
+    width: 100%;
+    height: auto;
+}
+
+/*Second line under "Learn more" colored yellow + hover effect */
+.standout-text a::before{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0.6rem;
+    background: hsla(7, 99%, 70%, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.5rem;
+    transition: 200ms;
+ }
+ 
+ .standout-text a:hover::before{
+    background: var(--Soft-red);
+ }
+
+
+/*Double image section */
+.graphic-and-photography-section{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.graphic-content{
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photography-content{
+    background-image: url(images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.space-maker{
+    visibility: hidden;
+}
+
+.photography-text{
+    text-align: center;
+}
+
+.graphic-text{
+    text-align: center;
+}
+
+
+
+
